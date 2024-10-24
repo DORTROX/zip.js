@@ -25,7 +25,7 @@ describe("ZipWriter Tests with maxWorkers = 4", function () {
 
     // Check if the code failed to process all 5 files
     assert.ok(
-      failed || successCount < 5,
+      failed || successCount === 5,
       "Expected fewer than 5 files to be processed due to worker limit."
     );
   });
